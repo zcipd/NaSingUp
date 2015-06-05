@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/nYakT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:background="#FFFFFF"
+        android:text="@string/happy" />
+
+    <CheckBox
+        android:id="@+id/nYakC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nYakT"
+        android:text="동의함"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/nAutoI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/nYakC" />
+
+    <Button
+        android:id="@+id/nRenewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nAutoI"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:text="새로 고침"
+        android:onClick="nRenewButton"/>
+
+    <EditText
+        android:id="@+id/nEditTextE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nRenewB"
+        android:background="#FFFFFF"
+        android:inputType="numberDecimal"
+        android:hint="왼쪽 이미지의 숫자를 입력하세요."
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="19sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/nEditTextE"
+        android:text="약관을 읽고, 동의하시면 체크 후 오른쪽 위 계속 진행을 터치 해 주세요." />
+
+</RelativeLayout>
